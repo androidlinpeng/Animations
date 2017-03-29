@@ -32,7 +32,7 @@ public class PaletteViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //View转换为Bitmap及getDrawingCache=null的解决方法
-                brushView.buildDrawingCache();
+                brushView.buildDrawingCache();//构建绘图缓存
                 Bitmap bitmap = Bitmap.createBitmap(brushView.getDrawingCache());
                 imageView.setImageBitmap(bitmap);
                 brushView.setDrawingCacheEnabled(false);

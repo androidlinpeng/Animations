@@ -58,6 +58,12 @@ public class BrushView extends View {
         float pointX = event.getX();
         float pointY = event.getY();
 
+//        ACTION_DOWN	手指 初次接触到屏幕 时触发。
+//        ACTION_MOVE	手指 在屏幕上滑动 时触发，会多次触发。
+//        ACTION_UP	手指 离开屏幕 时触发。
+//        ACTION_CANCEL	事件 被上层拦截 时触发。
+//        ACTION_OUTSIDE	手指 移除控件区域 时触发。
+
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 path.moveTo(pointX, pointY);

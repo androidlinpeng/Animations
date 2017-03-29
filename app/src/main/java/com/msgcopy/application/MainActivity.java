@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button7:
                 startActivity(new Intent(MainActivity.this,PaletteViewActivity.class));
                 break;
+            case R.id.button9:
+                startActivity(new Intent(MainActivity.this,SemicircleViewActivity.class));
+                break;
         }
     }
 }
