@@ -17,4 +17,15 @@
         android:textSize="20dp"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="该区域下滑弹框" />
 </RelativeLayout>
