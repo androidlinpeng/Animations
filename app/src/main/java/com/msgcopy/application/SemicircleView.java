@@ -1,6 +1,7 @@
 package com.msgcopy.application;
 
 import android.content.Context;
+import android.graphics.Path;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -10,7 +11,9 @@ import android.view.View;
  */
 
 public class SemicircleView extends View{
-    
+
+    private Path path;
+
     public SemicircleView(Context context) {
         super(context);
     }
