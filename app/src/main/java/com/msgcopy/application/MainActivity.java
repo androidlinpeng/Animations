@@ -19,13 +19,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.button:
                 startActivity(new Intent(this,AnimationActivity.class));
-                overridePendingTransition(R.anim.zoomin,0);
+                overridePendingTransition(R.anim.zoomin,R.anim.zooout);
                 break;
             case R.id.button2:
-
+                startActivity(new Intent(this,AnimationActivity.class));
+                overridePendingTransition(0,R.anim.zooout);
                 break;
             case R.id.button3:
-
+                startActivity(new Intent(this,GestureDetectorActivity.class));
+                overridePendingTransition(R.anim.leftin,R.anim.leftout);
                 break;
             case R.id.button4:
 
