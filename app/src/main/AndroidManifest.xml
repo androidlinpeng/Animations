@@ -22,7 +22,10 @@
         <activity android:name=".CustomCircleActivity" />
         <activity android:name=".PaletteViewActivity" />
         <activity android:name=".SemicircleViewActivity" />
-        <activity android:name=".GestureDetectorActivity"></activity>
+        <activity android:name=".GestureDetectorActivity" />
+        <activity
+            android:name=".ProgressViewActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

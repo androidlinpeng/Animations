@@ -95,6 +95,7 @@ public class GestureDetectorActivity extends AppCompatActivity {
         popupWindow.setContentView(view);
         popupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         popupWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
+        popupWindow.setAnimationStyle(R.style.popwin_anim_style);
         popupWindow.setFocusable(true);
         popupWindow.setOutsideTouchable(true);
         popupWindow.setBackgroundDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
