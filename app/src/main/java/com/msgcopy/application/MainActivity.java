@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.frame:
                 startActivity(new Intent(MainActivity.this,FrameAnimationActivity.class));
                 break;
+            case R.id.loadAnim:
+                startActivity(new Intent(MainActivity.this,LoadAnimActivity.class));
+                break;
         }
     }
 }

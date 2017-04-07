@@ -115,5 +115,15 @@
         android:onClick="onClick"
         android:text="帧动画" />
 
+    <Button
+        android:id="@+id/loadAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frame"
+        android:onClick="onClick"
+        android:text="加载动画" />
+
 
 </RelativeLayout>
