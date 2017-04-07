@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button9:
                 startActivity(new Intent(MainActivity.this,ProgressViewActivity.class));
                 break;
+            case R.id.blurry:
+                startActivity(new Intent(MainActivity.this,BlurryActivity.class));
+                break;
+            case R.id.frame:
+                startActivity(new Intent(MainActivity.this,FrameAnimationActivity.class));
+                break;
         }
     }
 }

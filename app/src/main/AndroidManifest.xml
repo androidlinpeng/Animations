@@ -26,6 +26,8 @@
         <activity
             android:name=".ProgressViewActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".BlurryActivity" />
+        <activity android:name=".FrameAnimationActivity"></activity>
     </application>
 
 </manifest>

@@ -95,5 +95,25 @@
         android:onClick="onClick"
         android:text="绘画水波进度" />
 
+    <Button
+        android:id="@+id/blurry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button9"
+        android:onClick="onClick"
+        android:text="模糊效果" />
+
+    <Button
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/blurry"
+        android:layout_alignStart="@+id/blurry"
+        android:layout_below="@+id/blurry"
+        android:onClick="onClick"
+        android:text="帧动画" />
+
 
 </RelativeLayout>
