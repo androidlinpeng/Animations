@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleLoadView">
+        <attr name="firstcolor" format="color"/>
+        <attr name="secondcolor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="sleep" format="integer"/>
+    </declare-styleable>
+</resources>

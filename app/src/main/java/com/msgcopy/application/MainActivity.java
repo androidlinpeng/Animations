@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.loadAnim:
                 startActivity(new Intent(MainActivity.this,LoadAnimActivity.class));
                 break;
+            case R.id.property:
+                startActivity(new Intent(MainActivity.this,LoadAnimActivity.class));
+                break;
+            case R.id.circle_load:
+                startActivity(new Intent(MainActivity.this,CircleLoadActivity.class));
+                break;
         }
     }
 }

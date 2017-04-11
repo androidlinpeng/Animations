@@ -7,6 +7,7 @@ import android.graphics.Path;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -57,16 +58,19 @@ public class WaveView extends View {
 
     public WaveView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        Log.i("WaveView","context, attrs, defStyle");
         init();
     }
 
     public WaveView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        Log.i("WaveView","context, attrs");
         init();
     }
 
     public WaveView(Context context) {
         super(context);
+        Log.i("WaveView","context");
         init();
     }
 

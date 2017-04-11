@@ -28,7 +28,9 @@
             android:screenOrientation="portrait" />
         <activity android:name=".BlurryActivity" />
         <activity android:name=".FrameAnimationActivity" />
-        <activity android:name=".LoadAnimActivity"></activity>
+        <activity android:name=".LoadAnimActivity" />
+        <activity android:name=".PropertyAnimActivity" />
+        <activity android:name=".CircleLoadActivity"></activity>
     </application>
 
 </manifest>
