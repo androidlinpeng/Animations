@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Animations</string>
+    <string name="str_weather">天气质量指数</string>
+    <string name="str_aqi">AQI</string>
 </resources>

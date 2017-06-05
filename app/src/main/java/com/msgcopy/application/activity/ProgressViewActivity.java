@@ -1,4 +1,4 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.msgcopy.application.R;
+import com.msgcopy.application.view.WaveView;
 
 public class ProgressViewActivity extends AppCompatActivity {
 

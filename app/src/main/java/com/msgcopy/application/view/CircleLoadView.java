@@ -1,4 +1,4 @@
-package com.msgcopy.application;
+package com.msgcopy.application.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,6 +10,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+
+import com.msgcopy.application.R;
 
 /**
  * Created by liang on 2017/4/10.
@@ -68,7 +70,6 @@ public class CircleLoadView extends View {
             mProgress = 0;
         }else {
             mTvProgress = mProgress*100/360;
-            Log.i("progress",""+mTvProgress);
             postInvalidate();
         }
 
@@ -107,25 +108,6 @@ public class CircleLoadView extends View {
         a.recycle();
         mPaint = new Paint();
 
-//        // 绘图线程
-//        new Thread() {
-//            public void run() {
-//                while (true) {
-//                    if (mProgress == 360) {
-//                        mProgress = 0;
-//                        break;
-//                    }
-//                    mTvProgress = mProgress/360*100;
-//                    Log.i("progress",""+mTvProgress);
-//                    postInvalidate();
-//                    try {
-//                        Thread.sleep(mSleep);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        }.start();
     }
 
     public CircleLoadView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -142,17 +124,22 @@ public class CircleLoadView extends View {
             onProgressChangeListener.OnProgressChange(mTvProgress);
         }
 
+
         int centre = getWidth() / 2; // 获取圆心的x坐标
         int radius = centre - mCircleWidth / 2;// 半径
         mPaint.setStrokeWidth(mCircleWidth); // 设置圆环的宽度
         mPaint.setAntiAlias(true); // 消除锯齿
         mPaint.setStyle(Paint.Style.STROKE); // 设置空心
         mPaint.setColor(mFirstColor); // 设置圆环的颜色
-        RectF rectf = new RectF(centre - radius, centre - radius, centre + radius, centre + radius);
-
-        mPaint.setColor(mFirstColor); // 设置圆环的颜色
         canvas.drawCircle(centre, centre, radius, mPaint); // 画出圆环
+
+        RectF rectf = new RectF(centre - radius, centre - radius, centre + radius, centre + radius);
         mPaint.setColor(mSecondColor); // 设置圆环的颜色
+        //oval :指定圆弧的外轮廓矩形区域。
+        //startAngle: 圆弧起始角度，单位为度。
+        //sweepAngle: 圆弧扫过的角度，顺时针方向，单位为度,从右中间开始为零度。
+        //useCenter: 如果为True时，在绘制圆弧时将圆心包括在内，通常用来绘制扇形。关键是这个变量。
+        //paint: 绘制圆弧的画板属性，如颜色，是否填充等。
         canvas.drawArc(rectf, -90, mProgress, false, mPaint); // 根据进度画圆弧
 
     }

@@ -27,7 +27,7 @@
                 android:text="加载中"
                 android:textSize="16sp" />
 
-            <com.msgcopy.application.LoadAnimView
+            <com.msgcopy.application.view.LoadAnimView
                 android:id="@+id/loadAnimview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

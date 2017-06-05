@@ -1,4 +1,4 @@
-package com.msgcopy.application;
+package com.msgcopy.application.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,7 +8,6 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
 /**
  * Created by liang on 2017/3/3.

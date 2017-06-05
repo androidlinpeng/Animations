@@ -4,22 +4,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.msgcopy.application.CircleLoadView
-        android:id="@+id/circle_load"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_centerInParent="true"
-        app:firstcolor = "#CCCCCC"
-        app:secondcolor = "#379cdf"
-        app:circleWidth = "12dp"
-        app:sleep = "1000"/>
+    <RelativeLayout
+        android:id="@+id/rl_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
 
-    <TextView
-        android:id="@+id/progress"
+        <com.msgcopy.application.view.CircleLoadView
+            android:id="@+id/circle_load"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            app:circleWidth="12dp"
+            app:firstcolor="#CCCCCC"
+            app:secondcolor="#379cdf"
+            app:sleep="1000" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_arc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_below="@+id/rl_circle">
+
+        <com.msgcopy.application.view.WeatherView
+            android:id="@+id/weather_arc"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_g"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textSize="25sp"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_circle"
+        android:layout_marginTop="34dp"
+        android:onClick="onClick"
+        android:text="AQI10" />
+
+    <Button
+        android:id="@+id/bt_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="AQI150"
+        android:layout_below="@+id/bt_g"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bt_o"
+        android:layout_alignRight="@+id/bt_o"
+        android:layout_below="@+id/bt_o"
+        android:onClick="onClick"
+        android:text="AQI300" />
 
 </RelativeLayout>

@@ -1,7 +1,9 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.msgcopy.application.R;
 
 public class BlurryActivity extends AppCompatActivity {
 

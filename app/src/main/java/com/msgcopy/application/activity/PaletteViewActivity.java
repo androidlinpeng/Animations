@@ -1,4 +1,4 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
 import android.graphics.Bitmap;
 import android.os.Environment;
@@ -8,6 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.msgcopy.application.FileUtils;
+import com.msgcopy.application.R;
+import com.msgcopy.application.view.BrushView;
 
 import java.io.File;
 import java.io.FileNotFoundException;

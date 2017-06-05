@@ -1,4 +1,4 @@
-package com.msgcopy.application;
+package com.msgcopy.application.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

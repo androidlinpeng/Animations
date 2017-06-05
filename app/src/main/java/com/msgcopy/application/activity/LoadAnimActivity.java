@@ -1,7 +1,10 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.msgcopy.application.R;
+import com.msgcopy.application.view.LoadAnimView;
 
 public class LoadAnimActivity extends AppCompatActivity {
 

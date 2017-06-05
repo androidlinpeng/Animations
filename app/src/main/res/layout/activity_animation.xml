@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#b6ceea"
-    tools:context="com.msgcopy.application.AnimationActivity">
+    tools:context="com.msgcopy.application.activity.AnimationActivity">
 
     <Button
         android:layout_width="wrap_content"

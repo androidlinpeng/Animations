@@ -1,9 +1,11 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.msgcopy.application.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -51,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,LoadAnimActivity.class));
                 break;
             case R.id.property:
-                startActivity(new Intent(MainActivity.this,LoadAnimActivity.class));
+                startActivity(new Intent(MainActivity.this,PropertyAnimActivity.class));
                 break;
             case R.id.circle_load:
                 startActivity(new Intent(MainActivity.this,CircleLoadActivity.class));

@@ -1,8 +1,10 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.msgcopy.application.R;
 
 public class AnimationActivity extends AppCompatActivity implements View.OnClickListener{
 

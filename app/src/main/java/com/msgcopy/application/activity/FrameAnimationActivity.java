@@ -1,9 +1,11 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.msgcopy.application.R;
 
 public class FrameAnimationActivity extends AppCompatActivity {
 

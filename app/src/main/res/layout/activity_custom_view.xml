@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.msgcopy.application.MainActivity">
+    tools:context="com.msgcopy.application.activity.MainActivity">
 
-    <com.msgcopy.application.CustomCircleView
+    <com.msgcopy.application.view.CustomCircleView
         android:id="@+id/customView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

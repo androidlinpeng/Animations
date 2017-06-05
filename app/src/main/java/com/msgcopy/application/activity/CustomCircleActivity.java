@@ -1,14 +1,12 @@
-package com.msgcopy.application;
+package com.msgcopy.application.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MotionEvent;
-import android.view.Window;
 import android.widget.Toast;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-import static android.util.Log.i;
+import com.msgcopy.application.R;
+import com.msgcopy.application.view.CustomCircleView;
 
 public class CustomCircleActivity extends AppCompatActivity implements CustomCircleView.OnButtonClickListener{
 

@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.msgcopy.application.BlurryActivity">
+    tools:context="com.msgcopy.application.activity.BlurryActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@mipmap/ic_launcher"/>
 
-    <com.msgcopy.application.BlurryView
+    <com.msgcopy.application.view.BlurryView
         android:id="@+id/blurry"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
