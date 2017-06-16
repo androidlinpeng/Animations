@@ -1,9 +1,8 @@
 package com.msgcopy.application.activity;
 
 import android.graphics.Bitmap;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +18,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class PaletteViewActivity extends AppCompatActivity {
+
+    private static final String TAG = "PaletteViewActivity";
 
     private ImageView imageView;
 
@@ -40,21 +41,13 @@ public class PaletteViewActivity extends AppCompatActivity {
                 Bitmap bitmap = Bitmap.createBitmap(brushView.getDrawingCache());
                 imageView.setImageBitmap(bitmap);
                 brushView.setDrawingCacheEnabled(false);
-
-                String path = Environment.getExternalStorageDirectory().getPath() +
-                        File.separator +
-                        "msgcopy" +
-                        File.separator +
-                        "palette-imgs" +
-                        File.separator + "view.png";
-
                 try {
                     File imgFile= FileUtils.createTmpFile("view.png");
                     FileOutputStream stream = new FileOutputStream(imgFile);
                     bitmap.compress(Bitmap.CompressFormat.PNG, 90, stream);
                     stream.flush();
                     stream.close();
-                    Log.i("path", "" + path);
+                    Log.i(TAG, "imgFile" + imgFile);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
@@ -62,6 +55,10 @@ public class PaletteViewActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void onClick(View view){
+        brushView.emptyPalette();
     }
 }
 

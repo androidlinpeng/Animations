@@ -31,7 +31,8 @@
         <activity android:name=".activity.FrameAnimationActivity" />
         <activity android:name=".activity.LoadAnimActivity" />
         <activity android:name=".activity.PropertyAnimActivity" />
-        <activity android:name=".activity.CircleLoadActivity"></activity>
+        <activity android:name=".activity.CircleLoadActivity" />
+        <activity android:name=".activity.FicheActivity"></activity>
     </application>
 
 </manifest>

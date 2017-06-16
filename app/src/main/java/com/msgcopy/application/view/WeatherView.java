@@ -77,6 +77,7 @@ public class WeatherView extends View {
 
     }
 
+    //当view的大小发生变化时触发
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -94,6 +95,7 @@ public class WeatherView extends View {
         float xPos;
         float yPos;
 
+        //圆弧范围
         mArcRect = new RectF(centre - radius, centre - radius, centre + radius, centre + radius);
 
         //初始化的圆弧

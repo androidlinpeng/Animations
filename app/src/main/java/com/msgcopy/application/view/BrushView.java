@@ -15,9 +15,9 @@ import android.view.View;
  */
 public class BrushView extends View {
 
-    private Paint brush = new Paint();
+    private Paint brush;
 
-    private Path path = new Path();
+    private Path path;
 
     private Canvas cacheCanvas;
 
@@ -37,8 +37,15 @@ public class BrushView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    public void emptyPalette(){
+        init();
+        postInvalidate();
+    }
 
     private void init() {
+
+        brush = new Paint();
+        path = new Path();
 
         brush.setAntiAlias(true);
         brush.setColor(Color.BLACK);

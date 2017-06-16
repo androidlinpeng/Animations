@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.circle_load:
                 startActivity(new Intent(MainActivity.this,CircleLoadActivity.class));
                 break;
+            case R.id.fiche:
+                startActivity(new Intent(MainActivity.this,FicheActivity.class));
+                break;
         }
     }
 }
